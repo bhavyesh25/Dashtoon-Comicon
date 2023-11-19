@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Form.module.css";
 import { Panel, PrimaryButton, SecondaryButton, TextArea } from "..";
 import { generator } from "@/handler/form";
-
+import { isMobile } from "react-device-detect";
 const Initial_Prompts = ["", "", "", "", "", "", "", "", "", ""];
 
 const Form = () => {
@@ -33,6 +33,7 @@ const Form = () => {
     }
   };
 
+
   return (
     <>
       {!showPanel && !loading && (
@@ -52,22 +53,31 @@ const Form = () => {
           })}
 
           <div
-            style={{
+            style={!isMobile ? {
               display: "flex",
               gap: "16px",
               marginTop: "12px",
               alignSelf: "flex-end",
-            }}
+              flexWrap: "wrap",
+            } :
+              {
+                display: "flex",
+                gap: "16px",
+                marginTop: "12px",
+                alignSelf: "flex-end",
+                flexDirection: "column",
+              }}
           >
+
+            <PrimaryButton
+              title="Generate Comic Strips"
+              onClick={handleGenerate}
+            />
             <SecondaryButton
               title="Clear Strips"
               onClick={() => {
                 setPrompts(Initial_Prompts);
               }}
-            />
-            <PrimaryButton
-              title="Generate Comic Strips"
-              onClick={handleGenerate}
             />
           </div>
         </div>
