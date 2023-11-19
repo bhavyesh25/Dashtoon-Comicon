@@ -1,0 +1,39 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-self: center;
+  width: 100%;
+}
+
+.label {
+  color: #000000;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: American Typewriter, serif ;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.8125rem;
+  padding: 13px 0.75rem -0px;
+  color: #414141;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-radius: 25px;
+  font-family: American Typewriter, serif ;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.799875rem;
+  opacity: 0.6;
+}
+

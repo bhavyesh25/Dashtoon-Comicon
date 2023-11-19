@@ -1,0 +1,24 @@
+.container{
+    background-color: rgb(186, 217, 223);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap:8px;
+}
+
+.panel{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+
+
