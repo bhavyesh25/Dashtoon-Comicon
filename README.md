@@ -6,3 +6,7 @@ A simple web application that allows users to create and share a 10-panel comic 
 
 The project is deployed on Vercel.
 Deployment link: https://dashtoon-comicon.vercel.app/
+
+
+![image](https://github.com/bhavyesh25/Dashtoon-Comicon/assets/90546658/377f03ed-82e4-4f8a-934c-d453d9d4c823)
+![image](https://github.com/bhavyesh25/Dashtoon-Comicon/assets/90546658/611b4b60-3284-4577-a7dd-7f5996c381c2)
